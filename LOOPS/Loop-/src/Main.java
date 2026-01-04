@@ -10,6 +10,7 @@ void main() {
           pattern09(6);
           pattern10(6);
           pattern11(7);
+          pattern12(6);
      }
 
      // Pattern 01 - Right angle triangle
@@ -189,5 +190,44 @@ static void pattern11(int n){
                System.out.print("*");
           }
           System.out.println();
+          System.out.println("-------------------------");
      }
 }
+static void pattern12(int n){
+     System.out.println("pattern 11");
+     for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= 2 * n; j++) {
+
+               // To print spaces
+               if (j > i && j <= 2 * n - i) {
+                    System.out.print(" ");
+               }
+
+               // To print stars
+               else {
+                    System.out.print("*");
+               }
+          }
+          System.out.println();
+     }
+
+     // Outer loop to handle the lower part
+     for (int i = n; i >= 1; i--) {
+          for (int j = 1; j <= 2 * n; j++) {
+
+               // To print spaces
+               if (j > i && j <= 2 * n - i) {
+                    System.out.print(" ");
+               }
+
+               // To print stars
+               else {
+                    System.out.print("*");
+               }
+          }
+          System.out.println();
+     }
+     System.out.println("-------------------------");
+}
+
+
