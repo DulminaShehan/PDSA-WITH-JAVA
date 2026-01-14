@@ -10,7 +10,7 @@ Scanner Userin=new Scanner(System.in);
 for(int j=0;j<size;j++){
     arr[j]=Userin.nextInt();
 
-    
+
 }
  for(int i=0; i<size;i++){
      System.out.println(arr[i]);
