@@ -54,4 +54,30 @@ void main() {
     for (int i = 0; i < size; i++) {
         System.out.println(arr[i]);
     }
+    //----------Search---------
+    System.out.println("Enter the Data for Search");
+    int data = Userin.nextInt();
+    int k;
+    for (k = 0; k < size; k++) {
+        if (arr[k] == data) {
+            break;
+        } else {
+            System.out.println("Not avelble ");
+        }
+    }
+    System.out.println("index value is " + k);
+//-------------update--------
+    System.out.println("Enter you Update Index");
+    int updateindx=Userin.nextInt();
+
+    System.out.println("Enter the Update value");
+    int updatevalue=Userin.nextInt();
+
+    arr[updateindx]=updatevalue;
+
+    System.out.println("Output of Array after Update:");
+    for (int i = 0; i < size; i++) {
+        System.out.println(arr[i]);
+    }
+
 }
