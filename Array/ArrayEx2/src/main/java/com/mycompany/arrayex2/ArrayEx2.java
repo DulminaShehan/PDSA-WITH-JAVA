@@ -20,5 +20,6 @@ public class ArrayEx2 {
         }
         System.out.println("Sum of array values = "+ sum);
         
+     
     }
 }
